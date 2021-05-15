@@ -1,9 +1,14 @@
 import { FunctionalComponent, h } from 'preact';
+import { jsx } from "../../style/styled";
+
+const Title = jsx('h1', {
+    color: 'red'
+})
 
 const Home: FunctionalComponent = () => {
     return (
         <div>
-            <h1>Home</h1>
+            <Title>Home</Title>
             <p>This is the Home component.</p>
         </div>
     );
